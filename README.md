@@ -16,6 +16,9 @@ Implements the Instruction Decode stage of a 5-stage pipelined RISC-V CPU. Extra
 ### [EX_STAGE](https://github.com/NoridelHerron/EX_STAGE)  
 Execute stage for a pipelined RISC-V CPU. Integrates ALU, forwarding inputs, and control logic with pipeline register support. Validated using a randomized testbench.
 
+### [MEM_STAGE](https://github.com/NoridelHerron/MEM_STAGE)
+Implements the Memory stage of a 5-stage pipelined RISC-V CPU. Handles lw and sw instructions, memory read/write via DATA_MEM, and passes necessary control signals. Verified with 5000 randomized test cases and waveform analysis, including intentional bug injection.
+
 ### [DATA_MEM](https://github.com/NoridelHerron/DATA_MEM)  
 Synchronous 32-bit word-addressable memory module with support for 1024 memory locations. Includes a reusable formatting function and randomized testbench with assertion-based verification and waveform validation.
 
