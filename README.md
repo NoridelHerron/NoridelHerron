@@ -6,6 +6,10 @@ Welcome to my GitHub! I'm currently pursuing a degree in Computer Engineering an
 ---
 
 ## Featured Projects
+###[MULTI-stage Pipeline Riscv CPU]
+(https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) 
+Still in progress, but forwarding works.
+Will update the documentation between June 2-6. Then work on the inserting NOPs, after that, branch and jump. After that, if you have any recommendation, I'm up for a challenge. If none, I will proceed with the shared memory. I would really love to visualize two different architecture, so I can actually compare both behavior closely.
 
 ### [INSTRUCTION_FETCH](https://github.com/NoridelHerron/INSTRUCTION_FETCH)  
 VHDL implementation of the Instruction Fetch stage for a custom RISC-V pipeline CPU. Includes program counter, instruction memory interface, and testbench validation.
