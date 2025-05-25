@@ -2,20 +2,29 @@
 
 **Computer Engineering | Digital Design | VHDL Projects**
 
-Welcome to my GitHub! I'm currently pursuing a degree in Computer Engineering and have developed several RTL-based components from scratch — including a 32-bit ALU, memory modules, and a full register file — all tested with fixed and randomized testbenches.
----
+**Welcome to my GitHub!**
+I’m currently pursuing a degree in Computer Engineering, with a focus on digital design and hardware architecture. My latest project is a fully custom, 5-stage pipelined RISC-V CPU built entirely in VHDL — complete with modular RTL components, working forwarding logic, and waveform-based debugging for integration.
+
+Earlier in my journey, I built key components like a 32-bit ALU, memory modules, and a full register file, all tested with both fixed and randomized testbenches. Through hands-on debugging and iteration, I’ve refined my understanding of control flow, hazard detection, and pipelined timing.
+
+I'm open to feedback, collaboration, and new challenges — especially around CPU design, verification, or system-level architecture. Let’s connect and learn together!
+
 
 ## Featured Projects
-###[MULTI-stage Pipeline Riscv CPU]
-(https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) 
-Still in progress, but forwarding works.
-Will update the documentation between June 2-6. Then work on the inserting NOPs, after that, branch and jump. After that, if you have any recommendation, I'm up for a challenge. If none, I will proceed with the shared memory. I would really love to visualize two different architecture, so I can actually compare both behavior closely.
+### [MULTI-stage Pipeline Riscv CPU] (https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) 
+## Project Status:
+Forwarding is now working correctly, and the design is still in progress. I’ll be updating the documentation between ** June 2–6 ** to reflect recent changes and insights.
+Next steps:
+- Implement NOP insertion for stalling
+- Add branch and jump instruction support
+- Then, if you have suggestions or challenges, I’d love to take them on
+If not, I’ll move forward with integrating shared memory, with the goal of visualizing and comparing the behavior of two different CPU architectures side by side.
 
 ### [INSTRUCTION_FETCH](https://github.com/NoridelHerron/INSTRUCTION_FETCH)  
 VHDL implementation of the Instruction Fetch stage for a custom RISC-V pipeline CPU. Includes program counter, instruction memory interface, and testbench validation.
 
 ### [ID_STAGE](https://github.com/NoridelHerron/ID_STAGE)  
-Implements the Instruction Decode stage of a 5-stage pipelined RISC-V CPU. Extracts opcode, register addresses, function codes, and immediate values from a 32-bit instruction. Generates control signals and interfaces with the register file to retrieve operands.
+Implements the Instruction Decode stage of a 5-stage pipelined RISC-V CPU. Extracts opcode, register values, function codes, and immediate values from a 32-bit instruction. Generates control signals and interfaces with the register file to retrieve operands.
 
 ### [EX_STAGE](https://github.com/NoridelHerron/EX_STAGE)  
 Execute stage for a pipelined RISC-V CPU. Integrates ALU, forwarding inputs, and control logic with pipeline register support. Validated using a randomized testbench.
@@ -37,9 +46,9 @@ Instruction memory unit used in the IF stage. Designed to preload instruction da
 ---
 
 ## Skills
-- **Languages:** VHDL, C, C++
-- **Tools:** Vivado, XSim, Git, GitHub
-- **Concepts:** RTL Design, CPU Architecture, Pipelining, Hazard Detection, Testbench Development, Assertion-Based Verification
+- **Languages:** VHDL(primary), C, C++
+- **Tools:** Vivado, XSim, GitHub
+- **Core Concepts**: RTL Design, Pipelined CPU Architecture, Data/Control Hazard Detection, Forwarding Logic, Testbench Development, Waveform-Based Debugging, Assertion-Based Verification
 ---
 
 ## Contact
