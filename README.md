@@ -3,15 +3,15 @@
 **Computer Engineering | Digital Design | VHDL Projects**
 
 **Welcome to my GitHub!**
-I’m currently pursuing a degree in Computer Engineering, with a focus on digital design and hardware architecture. My latest project is a fully custom, 5-stage pipelined RISC-V CPU built entirely in VHDL — complete with modular RTL components, working forwarding logic, and waveform-based debugging for integration.
+  I’m currently pursuing a degree in Computer Engineering, with a focus on digital design and hardware architecture. My latest project is a fully custom, 5-stage pipelined RISC-V CPU built entirely in VHDL — complete with modular RTL components, working forwarding logic, and waveform-based debugging for integration.
 
-Earlier in my journey, I built key components like a 32-bit ALU, memory modules, and a full register file, all tested with both fixed and randomized testbenches. Through hands-on debugging and iteration, I’ve refined my understanding of control flow, hazard detection, and pipelined timing.
+  Earlier in my journey, I built key components like a 32-bit ALU, memory modules, and a full register file, all tested with both fixed and randomized testbenches. Through hands-on debugging and iteration, I’ve refined my understanding of control flow, hazard detection, and pipelined timing.
 
 I'm open to feedback, collaboration, and new challenges — especially around CPU design, verification, or system-level architecture. Let’s connect and learn together!
 
 
 ## Featured Projects
-### [MULTI-stage Pipeline Riscv CPU] (https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) 
+### [Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) 
 ## Project Status:
 Forwarding is now working correctly, and the design is still in progress. I’ll be updating the documentation between ** June 2–6 ** to reflect recent changes and insights.
 Next steps:
