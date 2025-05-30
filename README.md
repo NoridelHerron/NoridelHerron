@@ -13,7 +13,7 @@ I'm open to feedback, collaboration, and new challenges — especially around CP
 ## Featured Projects
 ### [Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) 
 ## Project Status:
-Forwarding is now working correctly, and the design is still in progress. I’ll be updating the documentation between ** June 2–6 ** to reflect recent changes and insights.
+Forwarding is now working correctly, and the design is still in progress. Documentation updated!
 Next steps:
 - Implement NOP insertion for stalling
 - Add branch and jump instruction support
