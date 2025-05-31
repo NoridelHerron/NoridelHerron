@@ -13,12 +13,20 @@ I'm open to feedback, collaboration, and new challenges — especially around CP
 ## Featured Projects
 ### [Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) 
 ## Project Status:
-Forwarding is now working correctly, and the design is still in progress. Documentation updated!
-Next steps:
+### Current Status:
+- Forwarding logic implemented and verified
+- DATA_MEM updated to synchronous read/write following FPGA BRAM best practices
+- Documentation updated with debugging strategies and design choices
+### Next steps:
 - Implement NOP insertion for stalling
 - Add branch and jump instruction support
 - Then, if you have suggestions or challenges, I’d love to take them on
-If not, I’ll move forward with integrating shared memory, with the goal of visualizing and comparing the behavior of two different CPU architectures side by side.
+- Longer term: integrate shared memory and visualize/compare behavior of multiple CPU architectures side by side
+
+## Archive Repos (Earlier Work)
+The following repositories are older versions of individual pipeline stages.
+➡️ My latest and integrated CPU is in the main pipeline repo.
+However, some notes — especially on randomized testbench design — may still be useful to others learning VHDL and CPU architecture:
 
 ### [INSTRUCTION_FETCH](https://github.com/NoridelHerron/INSTRUCTION_FETCH)  
 VHDL implementation of the Instruction Fetch stage for a custom RISC-V pipeline CPU. Includes program counter, instruction memory interface, and testbench validation.
