@@ -51,7 +51,7 @@ Implements a synchronous register file with 32 registers, each 32 bits wide. Sup
 
 ### [MEMORY_MODULE](https://github.com/NoridelHerron/MEMORY_MODULE)  
 Instruction memory unit used in the IF stage. Designed to preload instruction data for fetch testing with reset and read-only control.
----
+
 
 ## Skills
 - **Languages:** VHDL(primary), C, C++
