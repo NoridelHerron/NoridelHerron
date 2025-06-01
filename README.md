@@ -9,6 +9,11 @@
 
 I'm open to feedback, collaboration, and new challenges — especially around CPU design, verification, or system-level architecture. Let’s connect and learn together!
 
+⚠️ Learning Disclaimer
+
+I am still learning, and this project is part of my hands-on learning process. If you find any bugs, mistakes, or incorrect assumptions in my work or documentation, please trust yourself, double-check with trusted resources, and feel free to let me know!
+I expect to make many improvements and corrections as I continue developing this project and deepening my understanding.
+If you have suggestions or spot issues, I truly welcome the feedback so I can continue improving.
 
 ## Featured Projects
 ### [Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) 
