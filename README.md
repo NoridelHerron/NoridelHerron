@@ -14,9 +14,8 @@ I'm open to feedback, collaboration, and new challenges — especially around CP
 ### [Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) 
 ## Project Status:
 ### Current Status:
-- Forwarding logic implemented and verified
-- DATA_MEM updated to synchronous read/write following FPGA BRAM best practices
-- Documentation updated with debugging strategies and design choices
+NOTE (6/1/2025): I have refactored Forwarding and Stall logic.
+The documentation will be updated once I complete hazard testing and final verification.
 ### Next steps:
 - Implement NOP insertion for stalling
 - Add branch and jump instruction support
