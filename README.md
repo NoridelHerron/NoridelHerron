@@ -19,8 +19,13 @@ If you have suggestions or spot issues, I truly welcome the feedback so I can co
 ### [Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) 
 ## Project Status:
 ### Current Status:
-NOTE (6/1/2025): Forwarding and Stall logic are working.
-The documentation will be updated at least tomorrow.
+Pipeline Refactored and Verified — Current Status (June 2, 2025):
+I completed a major refactoring of my pipelined RISC-V CPU project today. The pipeline structure is now clean and verified:
+- Decoder + Hazard Detection Unit combined → simplifies stage control
+- Execution + Forwarding Unit combined → ensures efficient data hazard resolution
+- Forwarding paths and stall logic fully verified in waveform
+- No red waves, no hazards leaking through — clean, stable pipeline
+
 ### Next steps:
 - Update documentation
 - Add branch and jump instruction support.
