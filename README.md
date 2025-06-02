@@ -9,7 +9,7 @@
 
 I'm open to feedback, collaboration, and new challenges — especially around CPU design, verification, or system-level architecture. Let’s connect and learn together!
 
-⚠️ Learning Disclaimer
+## ⚠️ Learning Disclaimer
 
 I am still learning, and this project is part of my hands-on learning process. If you find any bugs, mistakes, or incorrect assumptions in my work or documentation, please trust yourself, double-check with trusted resources, and feel free to let me know!
 I expect to make many improvements and corrections as I continue developing this project and deepening my understanding.
@@ -19,13 +19,14 @@ If you have suggestions or spot issues, I truly welcome the feedback so I can co
 ### [Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) 
 ## Project Status:
 ### Current Status:
-NOTE (6/1/2025): I have refactored Forwarding and Stall logic.
-The documentation will be updated once I complete hazard testing and final verification.
+NOTE (6/1/2025): Forwarding and Stall logic are working.
+The documentation will be updated at least tomorrow.
 ### Next steps:
-- Implement NOP insertion for stalling
-- Add branch and jump instruction support
+- Update documentation
+- Add branch and jump instruction support.
+- clean up
 - Then, if you have suggestions or challenges, I’d love to take them on
-- Longer term: integrate shared memory and visualize/compare behavior of multiple CPU architectures side by side
+- **Longer term**: integrate shared memory and visualize/compare behavior of multiple CPU architectures side by side
 
 ## Archive Repos (Earlier Work)
 The following repositories are older versions of individual pipeline stages.
