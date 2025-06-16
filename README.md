@@ -29,6 +29,8 @@ All modules are **thoroughly tested using 20,000 randomized test cases**, includ
 **NEXT**:
 - Forwarding Unit (June 16, 2025)
 
+**https://github.com/NoridelHerron/SUPERSCALAR_CPU**
+
 ## [Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) – Final Milestone (June 2025)
 I now consider this project completed and do not plan to refactor it further. Instead, I will apply what I learned here to my ongoing Superscalar CPU project and future architectural designs. However, if I receive constructive feedback or discover needed corrections, I’ll absolutely revisit and patch those areas. Refactoring and expansion will be left open to other project explorers or future collaborators.
 
