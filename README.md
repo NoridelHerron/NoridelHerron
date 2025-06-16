@@ -33,8 +33,7 @@ All modules are **thoroughly tested using 20,000 randomized test cases**, includ
 I now consider this project completed and do not plan to refactor it further. Instead, I will apply what I learned here to my ongoing Superscalar CPU project and future architectural designs. However, if I receive constructive feedback or discover needed corrections, I’ll absolutely revisit and patch those areas. Refactoring and expansion will be left open to other project explorers or future collaborators.
 
 ## Archive Repos (Earlier Work)
-The **earlier-stage modules** listed below were foundational to my learning and development. Their integration and refinement can be seen in the **main pipeline repository**, where the fully integrated CPU resides.
-➡️ While these standalone components have been **superseded** by the final pipeline version, the testbenches, notes, and design patterns—especially those involving randomized testing—may still be helpful for anyone learning VHDL or CPU architecture.
+The earlier-stage modules listed below were **foundational to my learning and development**. Their integration and refinement can be seen in the **main pipeline repository**, where the fully integrated CPU resides. While these standalone components have been **superseded** by the final pipeline version, the **testbenches, notes, and design patterns—especially** those involving randomized testing—may still be helpful for anyone learning VHDL or CPU architecture.
 
 [INSTRUCTION_FETCH](https://github.com/NoridelHerron/INSTRUCTION_FETCH)  
 VHDL implementation of the Instruction Fetch stage for a custom RISC-V pipeline CPU. Includes program counter, instruction memory interface, and testbench validation.
