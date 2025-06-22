@@ -39,7 +39,7 @@ This project builds on my prior pipeline design and introduces **dual-issue exec
 
 🔜 Upcoming:
 - Integration of decoder, register file, control and hazard logic  
-- VHDL-to-Verilog wrapper for compatibility
+- Verilog-to-VHDL wrapper for compatibility
 
 ---
 
