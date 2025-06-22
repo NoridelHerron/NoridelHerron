@@ -20,9 +20,9 @@ I validate my designs through **randomized testbenches**, **assertion-based veri
    - 5,000+ randomized test cases, waveform-based debugging, and TCL scripting  
 - ⚙️ **Superscalar CPU** (In Progress):  
    - Dual-issue datapath and advanced hazard resolution  
-   - Verified ALU, decoder, control unit, forwarding and hazard detection logic  
+   - Verified ALU, decoder, control unit, forwarding and hazard detection logic
    - 20,000+ randomized test cases applied during module verification
-
+   - integrated ALUs and forwarding unit in ex stage (waveform verified).
 ---
 
 ## 🚧 Projects
