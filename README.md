@@ -56,30 +56,42 @@ My first complete CPU design using Harvard architecture and a traditional 5-stag
 📌 Finalized and stable; available for review or forking.
 
 ---
+## Archive Repos (Earlier Work)
+The earlier-stage modules listed below were **foundational to my learning and development**. Their integration and refinement can be seen in the **main pipeline repository**, where the fully integrated CPU resides. While these standalone components have been **superseded** by the final pipeline version, the **testbenches, notes, and design patterns—especially** those involving randomized testing—may still be helpful for anyone learning VHDL or CPU architecture.
 
-## 🧱 Archive & Core Modules
+[INSTRUCTION_FETCH](https://github.com/NoridelHerron/INSTRUCTION_FETCH)  
+VHDL implementation of the Instruction Fetch stage for a custom RISC-V pipeline CPU. Includes program counter, instruction memory interface, and testbench validation.
 
-Standalone components used during development. Useful for reference, learning, and reuse:
+[ID_STAGE](https://github.com/NoridelHerron/ID_STAGE)  
+Implements the Instruction Decode stage of a 5-stage pipelined RISC-V CPU. Extracts opcode, register values, function codes, and immediate values from a 32-bit instruction. Generates control signals and interfaces with the register file to retrieve operands.
 
-- [**INSTRUCTION_FETCH**](https://github.com/NoridelHerron/INSTRUCTION_FETCH) – Program counter + instruction memory  
-- [**ID_STAGE**](https://github.com/NoridelHerron/ID_STAGE) – Instruction decoder, immediate extractor, control unit  
-- [**EX_STAGE**](https://github.com/NoridelHerron/EX_STAGE) – ALU wrapper, pipeline register integration  
-- [**MEM_STAGE**](https://github.com/NoridelHerron/MEM_STAGE) – Memory access logic (lw/sw)  
-- [**DATA_MEM**](https://github.com/NoridelHerron/DATA_MEM) – Word-addressable memory with assertions  
-- [**ALU_with_testBenches_vhdl**](https://github.com/NoridelHerron/ALU_with_testBenches_vhdl) – 32-bit ALU with flag logic  
-- [**32x32-bit Register File**](https://github.com/NoridelHerron/32x32-bit-Register-File-in-VHDL-) – Dual-read, single-write register file  
-- [**MEMORY_MODULE**](https://github.com/NoridelHerron/MEMORY_MODULE) – Preloadable instruction memory
+[EX_STAGE](https://github.com/NoridelHerron/EX_STAGE)  
+Execute stage for a pipelined RISC-V CPU. Integrates ALU, forwarding inputs, and control logic with pipeline register support. Validated using a randomized testbench.
+
+[MEM_STAGE](https://github.com/NoridelHerron/MEM_STAGE)
+Implements the Memory stage of a 5-stage pipelined RISC-V CPU. Handles lw and sw instructions, memory read/write via DATA_MEM, and passes necessary control signals. Verified with 5000 randomized test cases and waveform analysis, including intentional bug injection.
+
+[DATA_MEM](https://github.com/NoridelHerron/DATA_MEM)  
+Synchronous 32-bit word-addressable memory module with support for 1024 memory locations. Includes a reusable formatting function and randomized testbench with assertion-based verification and waveform validation.
+
+[ALU_with_testBenches_vhdl](https://github.com/NoridelHerron/ALU_with_testBenches_vhdl)  
+A fully functional 32-bit ALU in VHDL with signed/unsigned operations, flag generation (Z, N, C, V), and comprehensive testbenches including randomized edge-case validation.
+
+[32x32-bit Register File](https://github.com/NoridelHerron/32x32-bit-Register-File-in-VHDL-)  
+Implements a synchronous register file with 32 registers, each 32 bits wide. Supports dual-read, single-write, write protection for x0, and reset logic. Verified using randomized testbenches.
+
+[MEMORY_MODULE](https://github.com/NoridelHerron/MEMORY_MODULE)  
+Instruction memory unit used in the IF stage. Designed to preload instruction data for fetch testing with reset and read-only control.
 
 ---
 
 ## 🧠 Skills & Tools
 
 ### 💻 Languages  
-- **VHDL** (primary), C, C++
-
+- **VHDL** (primary), Verilog(Learning), SystemVerilog(Learning),C, C++
 ### 🧰 Tools & Platforms  
 - Vivado, XSim, ModelSim  
-- Git/GitHub  
+- GitHub  
 - TCL scripting (test automation)
 
 ### 🔬 Technical Focus  
@@ -97,7 +109,7 @@ Standalone components used during development. Useful for reference, learning, a
 ## 🚀 Opportunities I’m Seeking
 
 I'm currently exploring:
-- **Spring/Summer 2026 internships** in digital hardware design, RTL development, or verification  
+- **Internships or Full-time** in digital hardware design, RTL development, or verification  
 - **Undergraduate research** in CPU microarchitecture or FPGA-based systems  
 - Collaboration on open-source or academic projects in hardware systems or computer architecture
 
