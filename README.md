@@ -1,82 +1,128 @@
-# Noridel Herron
+ # Noridel Herron
 
-**Computer Engineering | Digital Design | VHDL Projects**
+**Computer Engineering | RTL Design | CPU Architecture | Verification | VHDL Projects**
 
-**Welcome to my GitHub!**
-I’m currently pursuing a degree in Computer Engineering, with a strong focus on digital design and hardware architecture. After completing a fully custom, **5-stage pipelined RISC-V CPU** in VHDL, I’ve now moved on to building a **Superscalar CPU**, expanding on concepts like parallel instruction issue, dual-path hazard resolution, and tighter execution timing.
+---
 
-Earlier in my journey, I designed and verified key components such as a 32-bit ALU, memory modules, and a full register file, using both fixed and randomized testbenches. I’ve strengthened my skills in control flow, hazard detection, pipelined timing, and verification through waveform inspection, manual calculation, and automation with TCL scripting.
+## 🔍 About Me
 
-I’m open to feedback, collaboration, and new challenges — especially in CPU design, system architecture, and RTL verification. Let’s connect and learn together!
-## ⚠️ Learning Disclaimer
+I’m a Computer Engineering student with a strong focus on **digital logic, RTL design**, **verification** and **computer architecture**. I recently completed a fully custom, **5-stage pipelined RISC-V CPU** (Harvard architecture) in VHDL, with built-in **hazard detection**, **stalling and forwarding logic**, and **jump/branch execution**. I’m now developing a **Superscalar CPU**, exploring dual-issue execution, tighter timing, and parallel hazard resolution.
 
-I am still learning, and this project is part of my hands-on learning process. If you find any bugs, mistakes, or incorrect assumptions in my work or documentation, please trust yourself, double-check with trusted resources, and feel free to let me know!
-I expect to make many improvements and corrections as I continue developing this project and deepening my understanding.
-If you have suggestions or spot issues, I truly welcome the feedback so I can continue improving.
+My work combines **testbench development**, **assertion-based verification**, and **waveform inspection** to validate functionality. I turn architecture concepts into modular VHDL implementations and learn through hands-on design and deep debugging.
 
-## Featured Projects
-## [Superscalar CPU]([https://github.com/NoridelHerron/INSTRUCTION_FETCH](https://github.com/NoridelHerron/SUPERSCALAR_CPU))  – Current Progress (June 2025) 
-This project is my next step beyond a basic pipelined design, applying what I’ve learned to a more complex architecture with dual-issue capability and tighter performance goals. While this is still a work in progress, several core components have been completed and fully verified.
+I'm actively seeking opportunities in **digital/RTL design**, **CPU microarchitecture**, **verification** or **FPGA-based systems**, and I’m open to collaboration, mentorship, and feedback.
 
-### Verified Modules
-- ALU (with internal adder and subtractor):
-- Decoder
+---
+
+## ⚡ Recent Highlights
+
+- **5-Stage Pipelined RISC-V CPU (Harvard Architecture)** – VHDL, Completed  
+- Implemented **hazard detection unit**, **stalling and forwarding resolution**, and **jump/branch logic**  
+- Developed all pipeline stages (IF, ID, EX, MEM, WB) 
+- **Superscalar CPU** – Dual-issue, hazard-aware architecture (In Progress)  
+- Fully Verified ALU, Decoder, Control Unit, Forwarding Unit, and Hazard Detection Unit with 20,000 test cases.
+✔️ Used waveform analysis, manual debugging, and TCL scripting
+
+---
+
+## 🚧 Projects
+
+### 🔹 [Superscalar CPU](https://github.com/NoridelHerron/SUPERSCALAR_CPU) – **Work in Progress (June 2025)**  
+My most recent project expands the capabilities of my pipelined CPU by introducing **dual-issue execution**, parallel instruction handling, and tighter performance goals. It builds on lessons from my first pipeline while pushing toward instruction-level parallelism and deeper hazard analysis.
+
+#### ✅ Verified Modules
+- ALU (with internal adder/subtractor and flag logic)
 - Control Unit
-- Hazard Detection Unit:
+- Instruction Decoder
+- Hazard Detection Unit
+- Forwarding Unit
 
-All modules are **thoroughly tested using 20,000 randomized test cases**, including edge cases. All operations **verified through waveform inspection** and cross-checked using manual and online calculation.
+All modules are **tested with 20,000+ randomized cases**, with validation via waveform inspection and manual verification.
 
-**NEXT**:
-- Forwarding Unit (June 16, 2025)
+#### 🔄 Next:
+- Integrate decoder, register file, control and hazard detection unit.
+- Write wrapper for the register file to make it compatible with vhdl.
 
-**https://github.com/NoridelHerron/SUPERSCALAR_CPU**
-
-## [Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) – Final Milestone (June 2025)
-I now consider this project completed and do not plan to refactor it further. Instead, I will apply what I learned here to my ongoing Superscalar CPU project and future architectural designs. However, if I receive constructive feedback or discover needed corrections, I’ll absolutely revisit and patch those areas. Refactoring and expansion will be left open to other project explorers or future collaborators.
-
-## Archive Repos (Earlier Work)
-The earlier-stage modules listed below were **foundational to my learning and development**. Their integration and refinement can be seen in the **main pipeline repository**, where the fully integrated CPU resides. While these standalone components have been **superseded** by the final pipeline version, the **testbenches, notes, and design patterns—especially** those involving randomized testing—may still be helpful for anyone learning VHDL or CPU architecture.
-
-[INSTRUCTION_FETCH](https://github.com/NoridelHerron/INSTRUCTION_FETCH)  
-VHDL implementation of the Instruction Fetch stage for a custom RISC-V pipeline CPU. Includes program counter, instruction memory interface, and testbench validation.
-
-[ID_STAGE](https://github.com/NoridelHerron/ID_STAGE)  
-Implements the Instruction Decode stage of a 5-stage pipelined RISC-V CPU. Extracts opcode, register values, function codes, and immediate values from a 32-bit instruction. Generates control signals and interfaces with the register file to retrieve operands.
-
-[EX_STAGE](https://github.com/NoridelHerron/EX_STAGE)  
-Execute stage for a pipelined RISC-V CPU. Integrates ALU, forwarding inputs, and control logic with pipeline register support. Validated using a randomized testbench.
-
-[MEM_STAGE](https://github.com/NoridelHerron/MEM_STAGE)
-Implements the Memory stage of a 5-stage pipelined RISC-V CPU. Handles lw and sw instructions, memory read/write via DATA_MEM, and passes necessary control signals. Verified with 5000 randomized test cases and waveform analysis, including intentional bug injection.
-
-[DATA_MEM](https://github.com/NoridelHerron/DATA_MEM)  
-Synchronous 32-bit word-addressable memory module with support for 1024 memory locations. Includes a reusable formatting function and randomized testbench with assertion-based verification and waveform validation.
-
-[ALU_with_testBenches_vhdl](https://github.com/NoridelHerron/ALU_with_testBenches_vhdl)  
-A fully functional 32-bit ALU in VHDL with signed/unsigned operations, flag generation (Z, N, C, V), and comprehensive testbenches including randomized edge-case validation.
-
-[32x32-bit Register File](https://github.com/NoridelHerron/32x32-bit-Register-File-in-VHDL-)  
-Implements a synchronous register file with 32 registers, each 32 bits wide. Supports dual-read, single-write, write protection for x0, and reset logic. Verified using randomized testbenches.
-
-[MEMORY_MODULE](https://github.com/NoridelHerron/MEMORY_MODULE)  
-Instruction memory unit used in the IF stage. Designed to preload instruction data for fetch testing with reset and read-only control.
-
-## Skills
-- **Languages:** VHDL(primary), C, C++
-- **Tools:** Vivado, XSim, GitHub
-- **Core Concepts**:
-  - RTL Design
-  - Pipelined CPU Architecture
-  - Data/Control Hazard Detection
-  - Forwarding and stall Logic
-  - Testbench Development
-  - Waveform-Based Debugging
-  - Assertion-Based Verification
 ---
 
-## Contact
-**Email:** noridel.herron@gmail.com  
-**GitHub:** [NoridelHerron](https://github.com/NoridelHerron)
+### 🔹 [Pipelined RISC-V CPU in VHDL](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) – **Completed (June 2025)**  
+This was my first fully integrated CPU project, built with **Harvard architecture** and all 5 classic pipeline stages. I implemented **hazard detection**, **stalling**, and **forwarding logic** to resolve data/control dependencies. The design includes support for **jump and branch logic**, tested across randomized and corner-case inputs.
+
+Key Features:
+- 5-Stage Harvard Architecture: IF, ID, EX, MEM, WB  
+- Fully integrated hazard detection + resolution (stall/forward)  
+- Supports conditional branches and jumps  
+- Manual and automated validation using TCL scripting + waveform inspection  
+- 5,000+ randomized test cases used in regression and stress testing
+
+📌 Finalized and stable; open to review-based patches.
+
 ---
 
-> *I focus on building working logic, validating results, and documenting everything as if I were handing it off to a team. If you're hiring for digital design, I’d love to show you what I can do.*
+## 🧱 Archive & Core Modules
+
+Standalone modules used during pipeline development, now archived or merged. Great for studying design patterns, testbench structures, or waveform debugging.
+
+- [**INSTRUCTION_FETCH**](https://github.com/NoridelHerron/INSTRUCTION_FETCH) – Program counter, instruction memory, reset logic  
+- [**ID_STAGE**](https://github.com/NoridelHerron/ID_STAGE) – Instruction decoder, immediate extractor, control unit  
+- [**EX_STAGE**](https://github.com/NoridelHerron/EX_STAGE) – ALU wrapper, forwarding logic, EX pipeline registers  
+- [**MEM_STAGE**](https://github.com/NoridelHerron/MEM_STAGE) – Handles load/store (lw/sw), DATA_MEM access  
+- [**DATA_MEM**](https://github.com/NoridelHerron/DATA_MEM) – 1024-word memory with randomized testbench and assertions  
+- [**ALU_with_testBenches_vhdl**](https://github.com/NoridelHerron/ALU_with_testBenches_vhdl) – 32-bit ALU with flags (Z, N, C, V)  
+- [**32x32-bit Register File**](https://github.com/NoridelHerron/32x32-bit-Register-File-in-VHDL-) – Dual-read, single-write register file with write protection for x0  
+- [**MEMORY_MODULE**](https://github.com/NoridelHerron/MEMORY_MODULE) – Instruction memory unit for fetch testing
+
+---
+
+## 🧠 Skills & Tools
+
+### 💻 Languages
+- **VHDL** (primary)
+- C, C++
+
+### 🧰 Tools & Environments
+- Vivado, XSim, ModelSim
+- Git & GitHub
+- TCL Scripting (Vivado simulation automation)
+
+### 🔬 Core Competencies
+- RTL Design and Simulation (VHDL)
+- Harvard Architecture CPU Design
+- Pipelined Processor Development (RISC-V)
+- Dual-Issue Execution (Superscalar CPU – in progress)
+- Hazard Detection Unit Design
+- Stall and Forwarding Logic Implementation
+- Jump and Branch Execution Control
+- Waveform Debugging and Timing Validation
+- Randomized Testbench Development
+- Assertion-Based Verification
+
+---
+
+## 🚀 What I’m Looking For
+
+I'm currently seeking:
+- **Internships (Spring 2026)** in RTL design, verification, or computer architecture  
+- **Research projects** in CPU design, FPGA development, or custom hardware acceleration  
+- **Mentorship or collaboration** opportunities in low-level system design
+
+I’m especially interested in teams focused on:
+- CPU microarchitecture or FPGA SoC design  
+- RISC-V instruction sets and extensions 
+- RTL-to-GDS flow and ASIC prototyping  
+- Verifications
+---
+
+## 📫 Contact
+
+- 📧 **Email**: noridel.herron@gmail.com  
+- 🔗 **GitHub**: [NoridelHerron](https://github.com/NoridelHerron)  
+- 🔗 **LinkedIn**: *[Insert if available]*
+
+---
+
+## 🙏 Note to Viewers
+
+This GitHub reflects my **active learning journey** in digital design and architecture. If you find areas for improvement or want to collaborate, I welcome your input!
+
+Thanks for visiting — and let’s connect!
