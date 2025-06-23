@@ -115,6 +115,24 @@ I'm currently exploring:
 
 ---
 
+## 🙏 Special Thanks
+
+I would like to extend my heartfelt gratitude to the following individuals who have contributed to my growth and this project in meaningful ways:
+- Chris Stratford – For giving me my very first code review and offering valuable suggestions to improve the structure and quality of my implementation.
+- Mazen Ahmed – For introducing me to the use of record types in VHDL, which enhanced both clarity and organization in my design.
+- William (Bill) "Stripes" Murray – For generously sharing my work with others and encouraging broader engagement with my project.
+- Charles Manning – For consistently providing insightful feedback that challenged my thinking and helped refine my approach.
+- Frank Bruno – For reviewing my ALU implementation and explaining the importance of using direct addition and subtraction for practical and optimized synthesis.
+
+---
+
+## 🤝 Contributors
+
+Special thanks to the following contributors who played an essential role in this project:
+- Vankateshwarlu Yejella – For designing the register file and fully verifying its functionality through rigorous testing.
+- Madhu Kanithi – For developing the data memory module and thoroughly verifying its correctness.
+---
+
 ## 📫 Contact
 
 - 📧 **Email**: noridel.herron@gmail.com  
