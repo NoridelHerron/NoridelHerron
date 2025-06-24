@@ -137,7 +137,7 @@ Special thanks to the following contributors who played an essential role in thi
 
 - 📧 **Email**: noridel.herron@gmail.com  
 - 🔗 **GitHub**: [NoridelHerron](https://github.com/NoridelHerron)  
-- 🔗 **LinkedIn**: *[Insert if available]*
+- 🔗 **LinkedIn**: *[]*
 
 ---
 
