@@ -36,15 +36,30 @@ This project builds on my prior pipeline design and introduces **dual-issue exec
 - Control Unit
 - Hazard Detection Unit
 - Forwarding Unit
+- Integrated the decoder, register file, control and hazard logic in ID_Stage
+- Integrated the forwarding unit and ALUs in EX_Stage
 
 🔜 Upcoming:
-- Integration of decoder, register file, control and hazard logic  
-- Verilog-to-VHDL wrapper for compatibility
+
+- IF Stage
+
+🌐 I’m currently collaborating with contributors from multiple countries on this project, fostering a diverse and supportive learning environment.
 
 ---
 
+# LearnToBuildCPU – Refactor Project – In Progress (June 2025)
+A community-focused refactoring of my original pipelined CPU project to make it more modular, well-documented, and beginner-friendly. This project features both VHDL and Verilog implementations and is designed to help others learn CPU architecture by contributing or studying the code.
+
+Key goals:
+- Simplify modules while keeping architecture accurate
+- Provide dual-language support (VHDL and Verilog)
+- Encourage learning by contribution (even for beginners!)
+- Assign clear, self-contained tasks for contributors
+
+🌐 I’m working with contributors from around the world to build an educational CPU design resource — the kind of hands-on project I wish I had when I was starting out.
+
 ### 🔹 [Pipelined RISC-V CPU in VHDL](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) – Completed (June 2025)  
-My first complete CPU design using Harvard architecture and a traditional 5-stage pipeline. Key control and data hazards are handled via dedicated detection logic and resolved through stalling and forwarding. Also includes **jump and branch support**.
+This project serves as the **baseline** architecture for my **LearnToBuildCPU project**, providing a fully functional and verified starting point for learners and contributors. It uses **Harvard architecture** and a traditional 5-stage pipeline. Key control and **data hazards** are handled via dedicated detection logic and resolved through **stalling and forwarding**. Also includes **jump and branch support**.
 
 **Key Features:**
 - Instruction fetch, decode, execute, memory, and writeback pipeline stages  
@@ -128,9 +143,15 @@ I would like to extend my heartfelt gratitude to the following individuals who h
 
 ## 🤝 Contributors
 
-Special thanks to the following contributors who played an essential role in this project:
+Special thanks to the following contributors who played an essential role in the 
+**Superscalar project**:
 - Vankateshwarlu Yejella – For designing the register file and fully verifying its functionality through rigorous testing.
 - Madhu Kanithi – For developing the data memory module and thoroughly verifying its correctness.
+- Nefeli Metallidou - WB Stage
+- 
+**LearnToBuildCPU project**:
+- S N Ravindra - ALU in verilog
+-   
 ---
 
 ## 📫 Contact
