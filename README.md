@@ -8,7 +8,9 @@
 
 I’m a Computer Engineering student with a focus on **RTL design**, **verification**, and **computer architecture**. I recently completed a custom **5-stage pipelined RISC-V CPU** using **Harvard architecture** in VHDL, with full support for **hazard detection**, **stalling/forwarding**, and **jump/branch execution**. My current work builds on that foundation through the development of a **Superscalar CPU**, where I’m implementing **dual-issue execution** and more advanced hazard handling.
 
-I validate my designs through **randomized testbenches**, **assertion-based verification**, and **waveform inspection**. I enjoy tackling challenging hardware design problems and continuously seek to deepen my understanding through hands-on exploration.
+Building on that foundation, I’m now working on a more advanced **Superscalar CPU**, where I’m implementing **dual-issue execution, complex hazard handling, and modular datapath control**. I also launched the **LearnToBuildCPU refactor project** — an open-source, beginner-friendly redesign of my pipeline CPU aimed at helping others understand CPU architecture through clear, modular HDL code in both VHDL and Verilog.
+
+I validate my designs using **randomized testbenches, assertion-based verification, and waveform analysis**, and I regularly **collaborate** with contributors from **different countries** to grow these projects as learning tools. I enjoy tackling challenging hardware design problems and continuously seek to deepen my understanding through hands-on exploration.
 
 ---
 
@@ -51,8 +53,6 @@ This project builds on my prior pipeline design and introduces **dual-issue exec
 - IF Stage
 
 🌐 I’m currently collaborating with contributors from multiple countries on this project, fostering a diverse and supportive learning environment.
-
----
 
 ### LearnToBuildCPU – Refactor Project – In Progress (June 2025)
 A community-focused refactoring of my original pipelined CPU project to make it more modular, well-documented, and beginner-friendly. This project features both VHDL and Verilog implementations and is designed to help others learn CPU architecture by contributing or studying the code.
@@ -114,7 +114,6 @@ Instruction memory unit used in the IF stage. Designed to preload instruction da
 ### 🧰 Tools & Platforms  
 - Vivado, XSim, ModelSim  
 - GitHub  
-- TCL scripting (test automation)
 
 ### 🔬 Technical Focus  
 - RTL Design & Simulation (VHDL)  
