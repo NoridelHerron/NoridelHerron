@@ -6,7 +6,7 @@
 
 ## 🔍 About Me
 
-I’m a Computer Engineering student with a focus on **RTL design**, **verification**, and **computer architecture**. I recently completed a custom **5-stage pipelined RISC-V CPU** using **Harvard architecture** in VHDL, with full support for **hazard detection**, **stalling/forwarding**, and **jump/branch execution**. My current work builds on that foundation through the development of a **Superscalar CPU**, where I’m implementing **dual-issue execution** and more advanced hazard handling.
+I’m a Computer Engineering student with a focus on **RTL design**, **verification**, and **computer architecture**. I recently completed a custom **5-stage pipelined RISC-V CPU** using **Harvard architecture** in VHDL, with full support for **hazard detection**, **stalling/forwarding**, and **jump/branch execution**. 
 
 Building on that foundation, I’m now working on a more advanced **Superscalar CPU**, where I’m implementing **dual-issue execution, complex hazard handling, and modular datapath control**. I also launched the **LearnToBuildCPU refactor project** — an open-source, beginner-friendly redesign of my pipeline CPU aimed at helping others understand CPU architecture through clear, modular HDL code in both VHDL and Verilog.
 
