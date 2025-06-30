@@ -22,7 +22,14 @@ I validate my designs through **randomized testbenches**, **assertion-based veri
    - Dual-issue datapath and advanced hazard resolution  
    - Verified ALU, decoder, control unit, forwarding and hazard detection logic
    - 20,000+ randomized test cases applied during module verification
-   - integrated ALUs and forwarding unit in ex stage (waveform verified).
+   - integrated multiple units in two stages (tcl, waveform, and manually verified).
+   - Collaborating with contributors from multiple countries to explore instruction-level parallelism
+- 🧠 **LearnToBuildCPU** – Refactor Project (In Progress):
+   - Educational and beginner-friendly refactor of original pipelined CPU
+   - Modular design with both VHDL and Verilog support
+   - Active collaboration with global contributors
+   - Designed as an open-source learning resource with tasks and documentation for new learners
+
 ---
 
 ## 🚧 Projects
@@ -151,7 +158,7 @@ Special thanks to the following contributors who played an essential role in the
 - 
 **LearnToBuildCPU project**:
 - S N Ravindra - ALU in verilog
--   
+    
 ---
 
 ## 📫 Contact
