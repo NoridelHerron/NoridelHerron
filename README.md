@@ -54,7 +54,7 @@ This project builds on my prior pipeline design and introduces **dual-issue exec
 
 ---
 
-# LearnToBuildCPU – Refactor Project – In Progress (June 2025)
+### LearnToBuildCPU – Refactor Project – In Progress (June 2025)
 A community-focused refactoring of my original pipelined CPU project to make it more modular, well-documented, and beginner-friendly. This project features both VHDL and Verilog implementations and is designed to help others learn CPU architecture by contributing or studying the code.
 
 Key goals:
