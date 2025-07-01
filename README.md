@@ -25,7 +25,7 @@ I validate my designs using **randomized testbenches, assertion-based verificati
    - Verified ALU, decoder, control unit, forwarding and hazard detection logic
    - 20,000+ randomized test cases applied during module verification
    - integrated multiple units in two stages (tcl, waveform, and manually verified).
-   - Collaborating with contributors from multiple countries to explore instruction-level parallelism
+   - Collaborating with contributors from Greece and US to explore instruction-level parallelism
 - 🧠 **LearnToBuildCPU** – Refactor Project (In Progress):
    - Educational and beginner-friendly refactor of original pipelined CPU
    - Modular design with both VHDL and Verilog support
@@ -51,8 +51,6 @@ This project builds on my prior pipeline design and introduces **dual-issue exec
 🔜 Upcoming:
 
 - IF Stage
-
-🌐 I’m currently collaborating with contributors from multiple countries on this project, fostering a diverse and supportive learning environment.
 
 ### LearnToBuildCPU – Refactor Project – In Progress (June 2025)
 A community-focused refactoring of my original pipelined CPU project to make it more modular, well-documented, and beginner-friendly. This project features both VHDL and Verilog implementations and is designed to help others learn CPU architecture by contributing or studying the code.
