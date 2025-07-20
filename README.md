@@ -6,166 +6,116 @@
 
 ## 🔍 About Me
 
-I’m a Computer Engineering student with a focus on **RTL design**, **verification**, and **computer architecture**. I recently completed a custom **5-stage pipelined RISC-V CPU** using **Harvard architecture** in VHDL, with full support for **hazard detection**, **stalling/forwarding**, and **jump/branch execution**. 
+I’m a Computer Engineering student passionate about **RTL design, verification, and computer architecture**. I built a custom **5-stage pipelined RISC-V CPU** from scratch in VHDL, featuring full hazard detection, stalling/forwarding, and jump/branch execution.
 
-Building on that foundation, I’m now working on a more advanced **Superscalar CPU**, where I’m implementing **dual-issue execution, complex hazard handling, and modular datapath control**. I also launched the **LearnToBuildCPU refactor project** — an open-source, beginner-friendly redesign of my pipeline CPU aimed at helping others understand CPU architecture through clear, modular HDL code in both VHDL and Verilog.
+Now I’m developing a more advanced **Superscalar CPU with dual-issue execution**, modular control logic, and instruction-level parallelism. I also started the **LearnToBuildCPU refactor project** — an educational rewrite of my original pipeline CPU to help learners understand HDL design through modular, readable VHDL and Verilog code.
 
-I validate my designs using **randomized testbenches, assertion-based verification, and waveform analysis**, and I regularly **collaborate** with contributors from **different countries** to grow these projects as learning tools. I enjoy tackling challenging hardware design problems and continuously seek to deepen my understanding through hands-on exploration.
+My workflow centers around **randomized testbenches (20K–100K tests), waveform debugging, and assertion-based verification**. I enjoy turning self-driven learning into reusable tools for others.
 
 ---
 
 ## ⚡ Highlights
+✅ **Pipelined RISC-V CPU**
+-	Harvard architecture, 5-stage pipeline (IF–WB)
+-	Hazard detection, stall/forwarding, jump/branch control
+-	5,000+ randomized test cases
+-	Waveform-driven debugging 
+⚙️ **Superscalar CPU (In Progress)**
+- Dual-issue datapath with modular control
+- All pipeline components integrated
+- Pending: Stall logic, branching, and flushing
+- **20K–100K** randomized test cases across modules
+- Verified via waveform inspection and testbench automation
+- Collaborating with contributors from Greece and the US
+🧠 **LearnToBuildCPU – Refactor Project**
+- Modular rewrite of the original pipeline CPU
+- Will be written in both VHDL, Verilog, System Verilog
+- Designed for new learners, with task-based contributions
+- Temporarily private while being refactored and reviewed for IP and licensing
+- Will be republished with documentation and learning materials
 
-- ✅ **Pipelined RISC-V CPU** (Completed):  
-   - Harvard architecture, 5-stage pipeline (IF, ID, EX, MEM, WB)  
-   - Implements hazard detection, stall/forwarding resolution, and control flow (branch/jump)  
-   - 5,000+ randomized test cases, waveform-based debugging, and TCL scripting  
-- ⚙️ **Superscalar CPU** (In Progress):  
-   - Dual-issue datapath and advanced hazard resolution  
-   - Verified ALU, decoder, control unit, forwarding and hazard detection logic
-   - 20,000+ randomized test cases applied during module verification
-   - integrated multiple units in two stages (tcl, waveform, and manually verified).
-   - Collaborating with contributors from Greece and US to explore instruction-level parallelism
-- 🧠 **LearnToBuildCPU** – Refactor Project (In Progress):
-   - Educational and beginner-friendly refactor of original pipelined CPU
-   - Modular design with both VHDL and Verilog support
-   - Active collaboration with global contributors
-   - Designed as an open-source learning resource with tasks and documentation for new learners
+---
+
+**🔐 Why It’s Private (For Now)**
+
+In earlier posts, I mentioned keeping everything open and public — and that’s still my goal. However, after receiving thoughtful technical feedback, I’ve come to understand the importance of reviewing IP protection and licensing options before fully releasing certain designs.
+
+Because of this, I’ve decided to:
+	•	Refactor the work myself across multiple HDLs
+	•	Complete final verification and documentation
+	•	Ensure proper safeguards are in place for its reuse and attribution
+
+Once finalized, I plan to republish it openly, welcoming learners and collaborators back into the project with clearer structure and purpose.
 
 ---
 
 ## 🚧 Projects
 
-### 🔹 [Superscalar CPU](https://github.com/NoridelHerron/SUPERSCALAR_CPU) – In Progress (June 2025)  
-This project builds on my prior pipeline design and introduces **dual-issue execution** to explore instruction-level parallelism and data/control hazards across parallel paths. I focus on modular, test-driven development using randomized testbenches and waveform validation.
+🔹 **Superscalar CPU – In Progress** (Private)
 
-#### Verified Modules:
-- ALU (with flags, adder/subtractor logic)
-- Instruction Decoder
-- Control Unit
-- Hazard Detection Unit
-- Forwarding Unit
-- Integrated the decoder, register file, control and hazard logic in ID_Stage
-- Integrated the forwarding unit and ALUs in EX_Stage
+This project explores instruction-level parallelism through dual-issue execution, advanced hazard detection, and modular stage design. All major components are integrated; stall logic, branching, and flushing are in development. Test coverage across modules ranges from 20K to 100K randomized cases.
 
-🔜 Upcoming:
+🔹 **LearnToBuildCPU – Refactor Project – In Progress** (Private)
 
-- IF Stage
+A clean, modular, and **tri-language (VHDL + Verilog + System Verilog)** redesign of my pipelined CPU. Designed for learners and contributors, this project includes guided tasks, documentation, and test infrastructure. It is currently private while undergoing internal refactoring and IP review.
 
-### LearnToBuildCPU – Refactor Project – In Progress (June 2025)
-A community-focused refactoring of my original pipelined CPU project to make it more modular, well-documented, and beginner-friendly. This project features both VHDL and Verilog implementations and is designed to help others learn CPU architecture by contributing or studying the code.
+🔹 **Pipelined RISC-V CPU in VHDL – Completed**
 
-Key goals:
-- Simplify modules while keeping architecture accurate
-- Provide dual-language support (VHDL and Verilog)
-- Encourage learning by contribution (even for beginners!)
-- Assign clear, self-contained tasks for contributors
-
-🌐 I’m working with contributors from around the world to build an educational CPU design resource — the kind of hands-on project I wish I had when I was starting out.
-
-### 🔹 [Pipelined RISC-V CPU in VHDL](https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation) – Completed (June 2025)  
-This project serves as the **baseline** architecture for my **LearnToBuildCPU project**, providing a fully functional and verified starting point for learners and contributors. It uses **Harvard architecture** and a traditional 5-stage pipeline. Key control and **data hazards** are handled via dedicated detection logic and resolved through **stalling and forwarding**. Also includes **jump and branch support**.
-
-**Key Features:**
-- Instruction fetch, decode, execute, memory, and writeback pipeline stages  
-- Hazard detection unit with stall/forward resolution  
-- Support for control transfer (branches/jumps)  
-- TCL scripts for batch simulation and waveform automation  
-- 5,000+ randomized test cases covering edge/corner cases
-
-📌 Finalized and stable; available for review or forking.
-
----
-## Archive Repos (Earlier Work)
-The earlier-stage modules listed below were **foundational to my learning and development**. Their integration and refinement can be seen in the **main pipeline repository**, where the fully integrated CPU resides. While these standalone components have been **superseded** by the final pipeline version, the **testbenches, notes, and design patterns—especially** those involving randomized testing—may still be helpful for anyone learning VHDL or CPU architecture.
-
-[INSTRUCTION_FETCH](https://github.com/NoridelHerron/INSTRUCTION_FETCH)  
-VHDL implementation of the Instruction Fetch stage for a custom RISC-V pipeline CPU. Includes program counter, instruction memory interface, and testbench validation.
-
-[ID_STAGE](https://github.com/NoridelHerron/ID_STAGE)  
-Implements the Instruction Decode stage of a 5-stage pipelined RISC-V CPU. Extracts opcode, register values, function codes, and immediate values from a 32-bit instruction. Generates control signals and interfaces with the register file to retrieve operands.
-
-[EX_STAGE](https://github.com/NoridelHerron/EX_STAGE)  
-Execute stage for a pipelined RISC-V CPU. Integrates ALU, forwarding inputs, and control logic with pipeline register support. Validated using a randomized testbench.
-
-[MEM_STAGE](https://github.com/NoridelHerron/MEM_STAGE)
-Implements the Memory stage of a 5-stage pipelined RISC-V CPU. Handles lw and sw instructions, memory read/write via DATA_MEM, and passes necessary control signals. Verified with 5000 randomized test cases and waveform analysis, including intentional bug injection.
-
-[DATA_MEM](https://github.com/NoridelHerron/DATA_MEM)  
-Synchronous 32-bit word-addressable memory module with support for 1024 memory locations. Includes a reusable formatting function and randomized testbench with assertion-based verification and waveform validation.
-
-[ALU_with_testBenches_vhdl](https://github.com/NoridelHerron/ALU_with_testBenches_vhdl)  
-A fully functional 32-bit ALU in VHDL with signed/unsigned operations, flag generation (Z, N, C, V), and comprehensive testbenches including randomized edge-case validation.
-
-[32x32-bit Register File](https://github.com/NoridelHerron/32x32-bit-Register-File-in-VHDL-)  
-Implements a synchronous register file with 32 registers, each 32 bits wide. Supports dual-read, single-write, write protection for x0, and reset logic. Verified using randomized testbenches.
-
-[MEMORY_MODULE](https://github.com/NoridelHerron/MEMORY_MODULE)  
-Instruction memory unit used in the IF stage. Designed to preload instruction data for fetch testing with reset and read-only control.
+This is the original, CPU project that seeded both the superscalar and refactor efforts. It uses Harvard architecture with full 5-stage pipeline and features robust hazard handling and simulation scripting.
 
 ---
 
 ## 🧠 Skills & Tools
 
-### 💻 Languages  
-- **VHDL** (primary), Verilog(Learning), SystemVerilog(Learning),C, C++
-### 🧰 Tools & Platforms  
-- Vivado, XSim, ModelSim  
-- GitHub  
+**Languages**:
+VHDL (primary), Verilog (learning), SystemVerilog (learning), C, C++
 
-### 🔬 Technical Focus  
-- RTL Design & Simulation (VHDL)  
-- Harvard Architecture CPU Design  
-- Pipelined and Superscalar Execution  
-- Hazard Detection & Resolution (stall/forward)  
-- Control Flow (jump/branch) Implementation  
-- Testbench & Assertion-Based Verification  
-- Waveform Debugging  
-- Randomized Testing & Validation
+**Tools**:
+Vivado, ModelSim, GitHub
 
----
-
-## 🚀 Opportunities I’m Seeking
-
-I'm currently exploring:
-- **Internships or Full-time** in digital hardware design, RTL development, or verification  
-- **Undergraduate research** in CPU microarchitecture or FPGA-based systems  
-- Collaboration on open-source or academic projects in hardware systems or computer architecture
-
----
-
-## 🙏 Special Thanks
-
-I would like to extend my heartfelt gratitude to the following individuals who have contributed to my growth and this project in meaningful ways:
-- Chris Stratford – For giving me my very first code review and offering valuable suggestions to improve the structure and quality of my implementation.
-- Mazen Ahmed – For introducing me to the use of record types in VHDL, which enhanced both clarity and organization in my design.
-- William (Bill) "Stripes" Murray – For generously sharing my work with others and encouraging broader engagement with my project.
-- Charles Manning – For consistently providing insightful feedback that challenged my thinking and helped refine my approach.
-- Frank Bruno – For reviewing my ALU implementation and explaining the importance of using direct addition and subtraction for practical and optimized synthesis.
+**Technical Focus**:
+- RTL Design & Simulation
+- Pipeline & Superscalar CPU Architectures
+- Hazard Detection & Forwarding
+- Waveform Debugging
+- Randomized Testbenches (20K–100K)
+- HDL Refactoring
+- Educational Open-Source Development
 
 ---
 
 ## 🤝 Contributors
 
-Special thanks to the following contributors who played an essential role in the 
-**Superscalar project**:
-- Vankateshwarlu Yejella – For designing the register file and fully verifying its functionality through rigorous testing.
-- Madhu Kanithi – For developing the data memory module and thoroughly verifying its correctness.
-- Nefeli Metallidou - WB Stage
-- 
-**LearnToBuildCPU project**:
-- S N Ravindra - ALU in verilog
-    
----
+Superscalar CPU
+- **Venkateshwarlu Yejella**: Register file and branching unit with testbench
+- **Madhu Kanithi**: ROM with testbench
+- **Nefeli Metallidou**: WB stage
 
-## 📫 Contact
-
-- 📧 **Email**: noridel.herron@gmail.com  
-- 🔗 **GitHub**: [NoridelHerron](https://github.com/NoridelHerron)  
-- 🔗 **LinkedIn**: *[]*
+LearnToBuildCPU
+- **S N Ravindra**: ALU in Verilog
 
 ---
 
-## 🙏 Final Note
+## 🙏 Special Thanks
 
-This GitHub reflects my self-driven learning in CPU design and digital systems. I welcome constructive feedback, contributions, and conversations. Thank you for stopping by!
+I’d like to acknowledge the engineers who offered meaningful technical feedback and guidance throughout this journey:
+- **Chris Stratford** – For reviewing my early RTL work and sharing insights on modular HDL design and IP protection considerations.
+- **Mazen Ahmed** – For introducing the use of record types in VHDL, which greatly improved the clarity and reusability of my design.
+- **William “Stripes” Murray** – For encouraging visibility by sharing my work with broader audiences and supporting its educational potential.
+- **Charles Manning** – For in-depth discussions that pushed me to think deeper about architecture choices, and signal clarity.
+- **Frank Bruno** – For reviewing my ALU design and emphasizing synthesis-friendly approaches using direct arithmetic over behavioral tricks.
+
+---
+
+📫 Contact
+
+📧 Email: noridel.herron@gmail.com
+🔗 GitHub: NoridelHerron
+
+⸻
+
+## 📝 Final Note
+
+These projects started as a way to challenge myself and build a strong technical portfolio. But with time and encouragement from professionals, I’ve realized they hold broader value — not just as personal milestones, but as open-source learning tools.
+
+They will be back. Stronger, cleaner, and ready to help others learn to build.
