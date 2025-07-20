@@ -16,10 +16,11 @@ My workflow centers around **randomized testbenches (20K–100K tests), waveform
 
 ## ⚡ Highlights
 ✅ **Pipelined RISC-V CPU**
--	Harvard architecture, 5-stage pipeline (IF–WB)
--	Hazard detection, stall/forwarding, jump/branch control
--	5,000+ randomized test cases
--	Waveform-driven debugging 
+- Harvard architecture, 5-stage pipeline (IF–WB)
+- Hazard detection, stall/forwarding, jump/branch control
+- 5,000+ randomized test cases
+- Waveform-driven debugging
+
 ⚙️ **Superscalar CPU (In Progress)**
 - Dual-issue datapath with modular control
 - All pipeline components integrated
@@ -27,6 +28,7 @@ My workflow centers around **randomized testbenches (20K–100K tests), waveform
 - **20K–100K** randomized test cases across modules
 - Verified via waveform inspection and testbench automation
 - Collaborating with contributors from Greece and the US
+
 🧠 **LearnToBuildCPU – Refactor Project**
 - Modular rewrite of the original pipeline CPU
 - Will be written in both VHDL, Verilog, System Verilog
@@ -41,9 +43,9 @@ My workflow centers around **randomized testbenches (20K–100K tests), waveform
 In earlier posts, I mentioned keeping everything open and public — and that’s still my goal. However, after receiving thoughtful technical feedback, I’ve come to understand the importance of reviewing IP protection and licensing options before fully releasing certain designs.
 
 Because of this, I’ve decided to:
-	•	Refactor the work myself across multiple HDLs
-	•	Complete final verification and documentation
-	•	Ensure proper safeguards are in place for its reuse and attribution
+- Refactor the work myself across multiple HDLs
+- Complete final verification and documentation
+- Ensure proper safeguards are in place for its reuse and attribution
 
 Once finalized, I plan to republish it openly, welcoming learners and collaborators back into the project with clearer structure and purpose.
 
