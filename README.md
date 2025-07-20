@@ -63,7 +63,11 @@ A clean, modular, and **tri-language (VHDL + Verilog + System Verilog)** redesig
 
 🔹 **Pipelined RISC-V CPU in VHDL – Completed**
 
-This is the original, CPU project that seeded both the superscalar and refactor efforts. It uses Harvard architecture with full 5-stage pipeline and features  hazard handling and resolution.
+This is the original CPU project that seeded both the Superscalar and LearnToBuildCPU refactor efforts. It implements a full 5-stage Harvard pipeline (IF, ID, EX, MEM, WB), with working hazard detection, stalling/forwarding logic, and control flow via jump and branch instructions.
+
+Most modules were functionally verified using 5,000+ randomized test cases, especially the ALU, ex stage, and more. At the system level, this CPU currently supports a core subset of RISC-V instructions: R-type, I-type (immediate), load, branch (BEQ), and jump.
+
+This project reflects my foundational knowledge in RTL and computer architecture. The instruction coverage and modular clarity will be significantly expanded in the LearnToBuildCPU refactor project, which builds on this system as a reusable and educational platform.
 
 ---
 
