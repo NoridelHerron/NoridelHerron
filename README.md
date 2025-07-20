@@ -29,7 +29,7 @@ My workflow centers around **randomized testbenches (20K–100K tests), waveform
 - Verified via waveform inspection and testbench automation
 - Collaborating with contributors from Greece and the US
 
-🧠 **LearnToBuildCPU – Refactor Project**
+🧠 **LearnToBuildCPU – Refactor Project (In Progress)**
 - Modular rewrite of the original pipeline CPU
 - Will be written in both VHDL, Verilog, System Verilog
 - Designed for new learners, with task-based contributions
@@ -59,11 +59,11 @@ This project explores instruction-level parallelism through dual-issue execution
 
 🔹 **LearnToBuildCPU – Refactor Project – In Progress** (Private)
 
-A clean, modular, and **tri-language (VHDL + Verilog + System Verilog)** redesign of my pipelined CPU. Designed for learners and contributors, this project includes guided tasks, documentation, and test infrastructure. It is currently private while undergoing internal refactoring and IP review.
+A clean, modular, and **tri-language (VHDL + Verilog + System Verilog)** redesign of my pipelined CPU. Will be designed for learners and contributors, this project includes guided tasks, documentation, and test infrastructure. It is currently private while undergoing internal refactoring and IP review.
 
 🔹 **Pipelined RISC-V CPU in VHDL – Completed**
 
-This is the original, CPU project that seeded both the superscalar and refactor efforts. It uses Harvard architecture with full 5-stage pipeline and features robust hazard handling and simulation scripting.
+This is the original, CPU project that seeded both the superscalar and refactor efforts. It uses Harvard architecture with full 5-stage pipeline and features  hazard handling and resolution.
 
 ---
 
@@ -104,7 +104,7 @@ I’d like to acknowledge the engineers who offered meaningful technical feedbac
 - **Chris Stratford** – For reviewing my early RTL work and sharing insights on modular HDL design and IP protection considerations.
 - **Mazen Ahmed** – For introducing the use of record types in VHDL, which greatly improved the clarity and reusability of my design.
 - **William “Stripes” Murray** – For encouraging visibility by sharing my work with broader audiences and supporting its educational potential.
-- **Charles Manning** – For in-depth discussions that pushed me to think deeper about architecture choices, and signal clarity.
+- **Charles Manning** – For in-depth comments that pushed me to think deeper about architecture choices, and signal clarity.
 - **Frank Bruno** – For reviewing my ALU design and emphasizing synthesis-friendly approaches using direct arithmetic over behavioral tricks.
 
 ---
