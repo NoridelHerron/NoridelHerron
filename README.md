@@ -15,26 +15,10 @@ My workflow centers around **randomized testbenches (20K–100K tests), waveform
 ---
 
 ## ⚡ Highlights
-✅ **Pipelined RISC-V CPU**
-- Harvard architecture, 5-stage pipeline (IF–WB)
-- Hazard detection, stall/forwarding, jump/branch control
-- 5,000+ randomized test cases
-- Waveform-driven debugging
-
-⚙️ **Superscalar CPU (In Progress)**
-- Dual-issue datapath with modular control
-- All pipeline components integrated
-- Pending: Stall logic, branching, and flushing
-- **20K–100K** randomized test cases across modules
-- Verified via waveform inspection and testbench automation
-- Collaborating with contributors from Greece and the US
-
-🧠 **LearnToBuildCPU – Refactor Project (In Progress)**
-- Modular rewrite of the original pipeline CPU
-- Will be written in both VHDL, Verilog, System Verilog
-- Designed for new learners, with task-based contributions
-- Temporarily private while being refactored and reviewed for IP and licensing
-- Will be republished with documentation and learning materials
+✅ Built a **5-stage pipelined RISC-V CPU** in VHDL with hazard detection, stall/forwarding, and branching.
+✅ Designed a **dual-issue Superscalar CPU** with advanced hazard handling, alignment, and large-scale verification for each module (20K–100K randomized tests).
+✅ Created the LearnToBuildCPU refactor project — a modular, **multi-HDL** (VHDL, Verilog, SystemVerilog) rewrite aimed at new learners.
+✅ Developed **reusable randomized testbench and waveform debugging** workflows for module- and system-level verification.
 
 ---
 
@@ -53,21 +37,14 @@ Once finalized, I plan to republish it openly, welcoming learners and collaborat
 
 ## 🚧 Projects
 
-🔹 **Superscalar CPU – In Progress** (Private)
+**Superscalar CPU – Completed to Scope** (Private)
+Explores instruction-level parallelism through dual-issue execution, advanced hazard detection, and modular stage design. All major components are integrated and verified with 20K–100K randomized test cases. Since I’ve implemented branching in previous CPU designs, I chose to pause before adding it here and instead focus on refactoring for reuse in future work, including my capstone.
 
-This project explores instruction-level parallelism through dual-issue execution, advanced hazard detection, and modular stage design. All major components are integrated; stall logic, branching, and flushing are in development. Test coverage across modules ranges from 20K to 100K randomized cases.
+**LearnToBuildCPU – Refactor Project** – In Progress (Private)
+A clean, modular, and tri-language (VHDL, Verilog, SystemVerilog) redesign of my pipelined CPU. Includes guided tasks, documentation, and test infrastructure for learners and contributors. Currently private while undergoing refactoring and IP review.
 
-🔹 **LearnToBuildCPU – Refactor Project – In Progress** (Private)
-
-A clean, modular, and **tri-language (VHDL + Verilog + System Verilog)** redesign of my pipelined CPU. Will be designed for learners and contributors, this project includes guided tasks, documentation, and test infrastructure. It is currently private while undergoing internal refactoring and IP review.
-
-🔹 **Pipelined RISC-V CPU in VHDL – Completed**
-
-This is the original CPU project that seeded both the Superscalar and LearnToBuildCPU refactor efforts. It implements a full 5-stage Harvard pipeline (IF, ID, EX, MEM, WB), with working hazard detection, stalling/forwarding logic, and control flow via jump and branch instructions.
-
-Most modules were functionally verified using 5,000+ randomized test cases, especially the ALU, ex stage, and more. At the system level, this CPU currently supports a core subset of RISC-V instructions: R-type, I-type (immediate), load, branch (BEQ), and jump.
-
-This project reflects my foundational knowledge in RTL and computer architecture. The instruction coverage and modular clarity will be significantly expanded in the LearnToBuildCPU refactor project, which builds on this system as a reusable and educational platform.
+**Pipelined RISC-V CPU in VHDL** – Completed
+Implements a 5-stage Harvard pipeline (IF, ID, EX, MEM, WB) with hazard detection, stalling/forwarding logic, and jump/branch control. Verified with 5,000+ randomized test cases. This design served as the foundation for my later superscalar and refactor projects.
 
 ---
 
@@ -105,10 +82,10 @@ LearnToBuildCPU
 ## 🙏 Special Thanks
 
 I’d like to acknowledge the engineers who offered meaningful technical feedback and guidance throughout this journey:
-- **Chris Stratford** – For reviewing my early RTL work and sharing insights on modular HDL design and IP protection considerations.
+- **Chris Stratford** – For reviewing my early RTL work and sharing insights on modular HDL design and IP protection considerations. He was the first to give me a true code review, along with specific recommendations that helped me improve my design quality.
+- **Charles Manning** – For providing in-depth, constructive feedback that pushed me to think more deeply about architecture choices and signal clarity, and for being consistently responsive to my technical questions.
 - **Mazen Ahmed** – For introducing the use of record types in VHDL, which greatly improved the clarity and reusability of my design.
 - **William “Stripes” Murray** – For encouraging visibility by sharing my work with broader audiences and supporting its educational potential.
-- **Charles Manning** – For in-depth comments that pushed me to think deeper about architecture choices, and signal clarity.
 - **Frank Bruno** – For reviewing my ALU design and emphasizing synthesis-friendly approaches using direct arithmetic over behavioral tricks.
 
 ---
