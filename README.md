@@ -6,42 +6,29 @@
 
 ## 🔍 About Me
 
-I’m a Computer Engineering student passionate about **RTL design, verification, and computer architecture**. I built a custom **5-stage pipelined RISC-V CPU** from scratch in VHDL, featuring full hazard detection, stalling/forwarding, and jump/branch execution.
+I’m a Computer Engineering student driven by a passion for **problem solving** — and CPU design has been the perfect playground to exercise that skill. I built a custom **5-stage pipelined RISC-V CPU** from scratch in VHDL, featuring **full hazard detection, stalling/forwarding, and jump/branch execution**. Through this, I discovered a deep interest in **RTL design, verification, and computer architecture**, which continue to shape my learning journey.
 
-Now I’m developing a more advanced **Superscalar CPU with dual-issue execution**, modular control logic, and instruction-level parallelism. I also started the **LearnToBuildCPU refactor project** — an educational rewrite of my original pipeline CPU to help learners understand HDL design through modular, readable VHDL and Verilog code.
+Now I’m developing a more advanced **Superscalar CPU** with dual-issue execution, modular control logic, and instruction-level parallelism. I also started the **LearnToBuildCPU refactor project** — an educational rewrite of my original pipeline CPU to help learners understand HDL design through modular, readable VHDL and Verilog code.
 
-My workflow centers around **randomized testbenches (20K–100K tests), waveform debugging, and assertion-based verification**. I enjoy turning self-driven learning into reusable tools for others.
+My workflow centers around **randomized testbenches (5K–1M tests), waveform debugging, and assertion-based verification**. I enjoy turning self-driven learning into reusable tools for others.
 
 ---
 
 ## ⚡ Highlights
 ✅ Built a **5-stage pipelined RISC-V CPU** in VHDL with hazard detection, stall/forwarding, and branching.
-✅ Designed a **dual-issue Superscalar CPU** with advanced hazard handling, alignment, and large-scale verification for each module (20K–100K randomized tests).
+✅ Designed a **dual-issue Superscalar CPU** with advanced hazard handling, alignment, and large-scale verification for each module (10K–100K randomized tests).
 ✅ Created the LearnToBuildCPU refactor project — a modular, **multi-HDL** (VHDL, Verilog, SystemVerilog) rewrite aimed at new learners.
 ✅ Developed **reusable randomized testbench and waveform debugging** workflows for module- and system-level verification.
-
----
-
-**🔐 Why It’s Private (For Now)**
-
-In earlier posts, I mentioned keeping everything open and public — and that’s still my goal. However, after receiving thoughtful technical feedback, I’ve come to understand the importance of reviewing IP protection and licensing options before fully releasing certain designs.
-
-Because of this, I’ve decided to:
-- Refactor the work myself across multiple HDLs
-- Complete final verification and documentation
-- Ensure proper safeguards are in place for its reuse and attribution
-
-Once finalized, I plan to republish it openly, welcoming learners and collaborators back into the project with clearer structure and purpose.
 
 ---
 
 ## 🚧 Projects
 
 **Superscalar CPU – Completed to Scope** (Private)
-Explores instruction-level parallelism through dual-issue execution, advanced hazard detection, and modular stage design. All major components are integrated and verified with 20K–100K randomized test cases. Since I’ve implemented branching in previous CPU designs, I chose to pause before adding it here and instead focus on refactoring for reuse in future work, including my capstone.
+Explores instruction-level parallelism through dual-issue execution, advanced hazard detection, and modular stage design. All major components are integrated and verified with 10K–100K randomized test cases. Hazard resolution is complete. I'm considering adding more pipeline stages, plus branching, flush, and jump once I finish other learning goals — including exploring direct-mapped, associative, 2-way, and 4-way caches.
 
-**LearnToBuildCPU – Refactor Project** – In Progress (Private)
-A clean, modular, and tri-language (VHDL, Verilog, SystemVerilog) redesign of my pipelined CPU. Includes guided tasks, documentation, and test infrastructure for learners and contributors. Currently private while undergoing refactoring and IP review.
+**LearnToBuildCPU – Refactor Project – In Progress** (Public)
+A clean, modular, and tri-language (VHDL, Verilog, SystemVerilog) redesign of my pipelined CPU. Includes guided tasks, documentation, waveform/test summaries, and test infrastructure for learners and contributors. While some parts are optimized and centralized, others are intentionally left modular or locally declared — offering room for exploration and hands-on refactoring. A VHDL version is synthesizable on FPGA; contributions using Verilog/SV are welcome.
 
 **Pipelined RISC-V CPU in VHDL** – Completed
 Implements a 5-stage Harvard pipeline (IF, ID, EX, MEM, WB) with hazard detection, stalling/forwarding logic, and jump/branch control. Verified with 5,000+ randomized test cases. This design served as the foundation for my later superscalar and refactor projects.
@@ -61,7 +48,7 @@ Vivado, ModelSim, GitHub
 - Pipeline & Superscalar CPU Architectures
 - Hazard Detection & Forwarding
 - Waveform Debugging
-- Randomized Testbenches (20K–100K)
+- Randomized Testbenches (20K–1M)
 - HDL Refactoring
 - Educational Open-Source Development
 
@@ -75,7 +62,7 @@ Superscalar CPU
 - **Nefeli Metallidou**: WB stage
 
 LearnToBuildCPU
-- **S N Ravindra**: ALU in Verilog
+- **S N Ravindra**: ALU in Verilog (Under Extra folder)
 
 ---
 
@@ -92,15 +79,13 @@ I’d like to acknowledge the engineers who offered meaningful technical feedbac
 
 📫 Contact
 
-📧 Email: noridel.herron@gmail.com
-🔗 GitHub: [@NoridelHerron](https://github.com/NoridelHerron)
-Linkedn: [https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BXOBONUc%2FQ0aEoYfSz1c4Ow%3D%3D](https://www.linkedin.com/in/noridel-h-5a5534156/)
+📧 Email  : noridel.herron@gmail.com
+🔗 GitHub : [@NoridelHerron](https://github.com/NoridelHerron)
+🔗 Linkedn: (https://www.linkedin.com/in/noridel-h-5a5534156/)
 
-
-⸻
+---
 
 ## 📝 Final Note
 
 These projects started as a way to challenge myself and build a strong technical portfolio. But with time and encouragement from professionals, I’ve realized they hold broader value — not just as personal milestones, but as open-source learning tools.
 
-They will be back. Stronger, cleaner, and ready to help others learn to build.
