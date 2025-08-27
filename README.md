@@ -8,7 +8,7 @@
 
 I’m a Computer Engineering student driven by a passion for **problem solving** — and CPU design has been the perfect playground to exercise that skill. I built a custom **5-stage pipelined RISC-V CPU** from scratch in VHDL, featuring **full hazard detection, stalling/forwarding, and jump/branch execution**. Through this, I discovered a deep interest in **RTL design, verification, and computer architecture**, which continue to shape my learning journey.
 
-Now I’m developing a more advanced **Superscalar CPU** with dual-issue execution, modular control logic, and instruction-level parallelism. I also started the **LearnToBuildCPU refactor project** — an educational rewrite of my original pipeline CPU to help learners understand HDL design through modular, readable VHDL and Verilog code.
+I also built a more advanced **Superscalar CPU** with dual-issue execution, modular control logic, and instruction-level parallelism. I also started the **LearnToBuildCPU refactor project** — an educational rewrite of my original pipeline CPU to help learners understand HDL design through modular, readable VHDL and Verilog code.
 
 My workflow centers around **randomized testbenches (5K–1M tests), waveform debugging, and assertion-based verification**. I enjoy turning self-driven learning into reusable tools for others.
 
@@ -25,7 +25,7 @@ My workflow centers around **randomized testbenches (5K–1M tests), waveform de
 ## 🚧 Projects
 
 **Superscalar CPU – Completed to Scope** (Private)
-Explores instruction-level parallelism through dual-issue execution, advanced hazard detection, and modular stage design. All major components are integrated and verified with 10K–100K randomized test cases. Hazard resolution is complete. I'm considering adding more pipeline stages, plus branching, flush, and jump once I finish other learning goals — including exploring direct-mapped, associative, 2-way, and 4-way caches.
+Explores instruction-level parallelism through dual-issue execution, advanced hazard detection, and modular stage design. All major components are integrated and verified with 10K–100K randomized test cases. Hazard resolution is complete. 
 
 **LearnToBuildCPU – Refactor Project – In Progress** (Public)
 A clean, modular, and tri-language (VHDL, Verilog, SystemVerilog) redesign of my pipelined CPU. Includes guided tasks, documentation, waveform/test summaries, and test infrastructure for learners and contributors. While some parts are optimized and centralized, others are intentionally left modular or locally declared — offering room for exploration and hands-on refactoring. A VHDL version is synthesizable on FPGA; contributions using Verilog/SV are welcome.
