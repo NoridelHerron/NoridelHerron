@@ -24,15 +24,18 @@ My workflow centers around **randomized testbenches (5K–1M tests), waveform de
 
 ## 🚧 Projects
 
-(Superscalar CPU)[https://github.com/NoridelHerron/SUPERSCALAR_CPU] - Completed
+**Superscalar CPU** - Completed
 - Explores instruction-level parallelism via dual-issue execution, hazard detection, and modular stage design. All major components are integrated and verified with 10K–100K randomized test cases.
+- [https://github.com/NoridelHerron/SUPERSCALAR_CPU] 
 
-(LearnToBuildCPU – Refactor Project)[https://github.com/NoridelHerron/LearnToBuildCPU]
+**LearnToBuildCPU – Refactor Project**
 - A clean, modular, and tri-language rewrite of my pipelined CPU. Includes guided tasks, waveform/test summaries, and test infrastructure. A synthesizable VHDL version runs on FPGA; Verilog/SV modules welcome.
 - This is an ongoing, long-term project that will grow alongside my development in HDL and verification.
+- [https://github.com/NoridelHerron/LearnToBuildCPU]
 
-(Pipelined RISC-V CPU in VHDL)[https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation] -Completed
+**Pipelined RISC-V CPU in VHDL** - Completed
 - Implements a 5-stage Harvard pipeline (IF, ID, EX, MEM, WB) with hazard logic and branching. Verified with 5,000+ randomized test cases. Served as the foundation for later projects.
+- [https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation]
 
 ---
 
