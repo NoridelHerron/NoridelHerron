@@ -15,49 +15,47 @@ My workflow centers around **randomized testbenches (5K–1M tests), waveform de
 ---
 
 ## ⚡ Highlights
-✅ Built a **5-stage pipelined RISC-V CPU** in VHDL with hazard detection, stall/forwarding, and branching.
-✅ Designed a **dual-issue Superscalar CPU** with advanced hazard handling, alignment, and large-scale verification for each module (10K–100K randomized tests).
-✅ Created the LearnToBuildCPU refactor project — a modular, **multi-HDL** (VHDL, Verilog, SystemVerilog) rewrite aimed at new learners.
-✅ Developed **reusable randomized testbench and waveform debugging** workflows for module- and system-level verification.
+- ✅ Built a 5-stage pipelined RISC-V CPU in VHDL with hazard resolution and branching logic
+- ✅ Designed a dual-issue Superscalar CPU with advanced hazard handling and large-scale verification (10K–100K+ tests)
+- ✅ Created LearnToBuildCPU — a modular, multi-HDL (VHDL, Verilog, SystemVerilog) educational refactor
+- ✅ Developed reusable testbenches and debugging workflows used across modules and HDL types
 
 ---
 
 ## 🚧 Projects
 
-**Superscalar CPU – Completed to Scope** (Private)
-Explores instruction-level parallelism through dual-issue execution, advanced hazard detection, and modular stage design. All major components are integrated and verified with 10K–100K randomized test cases. Hazard resolution is complete. 
+[https://github.com/NoridelHerron/SUPERSCALAR_CPU]
+Explores instruction-level parallelism via dual-issue execution, hazard detection, and modular stage design. All major components are integrated and verified with 10K–100K randomized test cases.
 
-**LearnToBuildCPU – Refactor Project – In Progress** (Public)
-A clean, modular, and tri-language (VHDL, Verilog, SystemVerilog) redesign of my pipelined CPU. Includes guided tasks, documentation, waveform/test summaries, and test infrastructure for learners and contributors. While some parts are optimized and centralized, others are intentionally left modular or locally declared — offering room for exploration and hands-on refactoring. A VHDL version is synthesizable on FPGA; contributions using Verilog/SV are welcome.
+[https://github.com/NoridelHerron/LearnToBuildCPU]
+A clean, modular, and tri-language rewrite of my pipelined CPU. Includes guided tasks, waveform/test summaries, and test infrastructure. A synthesizable VHDL version runs on FPGA; Verilog/SV modules welcome.
 
-**Pipelined RISC-V CPU in VHDL** – Completed
-Implements a 5-stage Harvard pipeline (IF, ID, EX, MEM, WB) with hazard detection, stalling/forwarding logic, and jump/branch control. Verified with 5,000+ randomized test cases. This design served as the foundation for my later superscalar and refactor projects.
+[https://github.com/NoridelHerron/Pipelined-RISC-V-CPU-in-VHDL-From-Scratch-to-Simulation]
+Implements a 5-stage Harvard pipeline (IF, ID, EX, MEM, WB) with hazard logic and branching. Verified with 5,000+ randomized test cases. Served as the foundation for later projects.
 
 ---
 
 ## 🧠 Skills & Tools
 
 **Languages**:
-VHDL (primary), Verilog (learning), SystemVerilog (learning), C, C++
+VHDL (primary), Verilog, SystemVerilog, C, C++
 
 **Tools**:
 Vivado, ModelSim, GitHub
 
-**Technical Focus**:
+**Strengths**:
 - RTL Design & Simulation
 - Pipeline & Superscalar CPU Architectures
 - Hazard Detection & Forwarding
-- Waveform Debugging
-- Randomized Testbenches (20K–1M)
-- HDL Refactoring
-- Educational Open-Source Development
-
+- Verification: Testbenches (20K–1M), Waveform Debugging
+- HDL Refactoring & Educational Open-Source Development
+- 
 ---
 
 ## 🤝 Contributors
 
 Superscalar CPU
-- **Venkateshwarlu Yejella**: Register file and branching unit with testbench
+- **Venkateshwarlu Yejella**: Register file + branching unit w/ testbench
 - **Madhu Kanithi**: ROM with testbench
 - **Nefeli Metallidou**: WB stage
 
@@ -68,12 +66,12 @@ LearnToBuildCPU
 
 ## 🙏 Special Thanks
 
-I’d like to acknowledge the engineers who offered meaningful technical feedback and guidance throughout this journey:
-- **Chris Stratford** – For reviewing my early RTL work and sharing insights on modular HDL design and IP protection considerations. He was the first to give me a true code review, along with specific recommendations that helped me improve my design quality.
-- **Charles Manning** – For providing in-depth, constructive feedback that pushed me to think more deeply about architecture choices and signal clarity, and for being consistently responsive to my technical questions.
-- **Mazen Ahmed** – For introducing the use of record types in VHDL, which greatly improved the clarity and reusability of my design.
-- **William “Stripes” Murray** – For encouraging visibility by sharing my work with broader audiences and supporting its educational potential.
-- **Frank Bruno** – For reviewing my ALU design and emphasizing synthesis-friendly approaches using direct arithmetic over behavioral tricks.
+To the engineers who offered mentorship and valuable technical feedback:
+- **Chris Stratford** — For sharing insights on modular HDL and early code reviews
+- **Charles Manning** — For deep architectural feedback and responsiveness
+- **Mazen Ahmed** — For introducing record types in VHDL
+- **William “Stripes” Murray** — For amplifying the educational value of my work
+- **Frank Bruno** — For synthesis-focused RTL advice on arithmetic design
 
 ---
 
@@ -87,5 +85,5 @@ I’d like to acknowledge the engineers who offered meaningful technical feedbac
 
 ## 📝 Final Note
 
-These projects started as a way to challenge myself and build a strong technical portfolio. But with time and encouragement from professionals, I’ve realized they hold broader value — not just as personal milestones, but as open-source learning tools.
+These projects started as personal challenges but evolved into something more — tools to help others learn digital design through real, reusable HDL examples.
 
